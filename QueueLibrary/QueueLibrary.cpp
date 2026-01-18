@@ -1,0 +1,37 @@
+#include "clsMyQueue.h"
+int main() {
+    clsMyQueue<int>MyQueue;
+    MyQueue.push(10);
+    MyQueue.push(20);
+    MyQueue.push(30);
+    MyQueue.push(40);
+    MyQueue.push(50);
+    cout << "Queue:";
+    MyQueue.Print();
+    cout << "\nQueue Size: " << MyQueue.Size() << ".\n";
+    cout << "Queue Front: " << MyQueue.front() << ".\n";
+    cout << "Queue Back: " << MyQueue.back() << ".\n";
+    MyQueue.pop();
+    cout << "\nQueue After Pop:";
+    MyQueue.Print();
+    cout << "\nItem(2): " << MyQueue.GetItem(2) << ".\n\n";
+    MyQueue.Reverse();
+    cout << "Queue After Reversing:";
+    MyQueue.Print();
+    MyQueue.UpdateItem(2, 600);
+    cout << "\nQueue After Updating Item(2) to 600:";
+    MyQueue.Print();
+    MyQueue.InsertAfter(2, 800);
+    cout << "\nQueue After Inserting 800 After Item(2):";
+    MyQueue.Print();
+    MyQueue.InsertAtFront(1000);
+    cout << "\nQueue After Inserting 1000 At Front:";
+    MyQueue.Print();
+    MyQueue.InsertAtBack(2000);
+    cout << "\nQueue After Inserting 2000 At Back:";
+    MyQueue.Print();
+    MyQueue.Clear();
+    cout << "\nQueue After Clearing:";
+    MyQueue.Print();
+    return 0;
+};

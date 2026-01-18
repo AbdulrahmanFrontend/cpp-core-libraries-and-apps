@@ -1,0 +1,30 @@
+#include "clsDynamicArray.h"
+int main() {
+	clsDynamicArray<int>MyDynamicArray(5);
+	MyDynamicArray.SetItem(0, 10);
+	MyDynamicArray.SetItem(1, 20);
+	MyDynamicArray.SetItem(2, 30);
+	MyDynamicArray.SetItem(3, 40);
+	MyDynamicArray.SetItem(4, 50);
+	cout << "Is Empty? " << MyDynamicArray.IsEmpty() << ".\n";
+	cout << "Array Size: " << MyDynamicArray.Size() << ".\n";
+	cout << "Array Items: ";
+	MyDynamicArray.PrintList();
+	MyDynamicArray.InsertAtBeginning(400);
+	cout << "\nArray Items After Inserting 400 at Beginning:";
+	MyDynamicArray.PrintList();
+	cout << "Array Size: " << MyDynamicArray.Size() << ".\n";
+	MyDynamicArray.InsertBefore(2, 500);
+	cout << "\nArray Items After Inserting 500 Before Index 2:";
+	MyDynamicArray.PrintList();
+	cout << "Array Size: " << MyDynamicArray.Size() << ".\n";
+	MyDynamicArray.InsertAfter(2, 600);
+	cout << "\nArray Items After Inserting 600 After Index 2:";
+	MyDynamicArray.PrintList();
+	cout << "Array Size: " << MyDynamicArray.Size() << ".\n";
+	MyDynamicArray.InsertAtEnd(800);
+	cout << "\nArray Items After Inserting 800 at End:";
+	MyDynamicArray.PrintList();
+	cout << "Array Size: " << MyDynamicArray.Size() << ".\n";
+	return 0;
+};
