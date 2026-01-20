@@ -48,5 +48,11 @@ This repository contains multiple libraries and console applications built from 
 
 ---
 
+## ▶ How to Explore This Repository
+Each library and application is self-contained.
+You can open any project folder in Visual Studio and run it independently.
+
+---
+
 ## ⚠ Notes
 This project is intended for educational and demonstration purposes and is not meant to replace STL containers in production systems.
