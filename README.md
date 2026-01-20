@@ -49,8 +49,9 @@ This repository contains multiple libraries and console applications built from 
 ---
 
 ## ▶ How to Explore This Repository
-Each library and application is self-contained.
-You can open any project folder in Visual Studio and run it independently.
+
+- Each library and application is self-contained.
+- You can open any project folder in Visual Studio and run it independently.
 
 ---
 
